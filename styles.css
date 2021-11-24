@@ -1,0 +1,30 @@
+/* COLOR PALLETTE 
+FRENCH BLUE: #65AFFF
+SPACE CADET: #1B2845
+BLUE GRAY: #5899E2
+INDIGO DYE: #274060
+BEAU BLUE: #C7DBE6
+CULTURED: #FAFAFA
+*/
+
+/* GLOBAL CSS EDITS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0.5em;
+    border: 5px solid #274060;
+    min-height: 100vh;
+}
+
+/* CONTAINER EDITS */
+
+#container {
+    text-align: center;
+    margin: 0 auto;
+}
