@@ -12,19 +12,114 @@ CULTURED: #FAFAFA
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
-    width: 100%;
-    margin: 0.5em;
-    border: 5px solid #274060;
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5em;
+    padding: 2em;
+    border: 8px solid #274060;
+    min-height: 95vh;
+    background-color: #FAFAFA;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 6em;
+    color: #1B2845;
 }
 
 /* CONTAINER EDITS */
 
 #container {
+    align-items: center;
     text-align: center;
     margin: 0 auto;
+}
+
+.sub-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 1em 0;
+    color: rgb(19, 19, 19);
+}
+
+/* BUTTON EDITS */
+
+#btn {
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 0.5em 0.8em;
+    border: white;
+    background: #65AFFF;
+    color: white;
+    transition: 0.2s ease;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#btn:hover {
+    background: #fafafa;
+    color: #65AFFF;
+    border: 3px solid #65AFFF;
+}
+
+
+
+.transition {
+    transition: 0.2s ease;
+}
+
+/* APPENDED CONTENT EDITS */
+
+.read-more-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #274060;
+    color: #fafafa;
+    padding: 2em;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 3em
+}
+
+.appended {
+    margin-bottom: 1.5em;
+}
+
+.continue-button {
+    text-transform: uppercase;
+    color: #274060;
+    background: #fafafa;
+    text-decoration: none;
+    border: 3px solid #fafafa;
+    padding: 0.5em;
+    transition: 0.2s ease;
+}
+
+.continue-button:hover {
+    background-color: #60a5ffab;
+    color: #fafafa;
+}
+
+.carousel-container {
+    margin-bottom: 2em;
+}
+
+.bluetext {
+    color: #65AFFF;
+    text-shadow: 1px 1px 1px white;
 }
