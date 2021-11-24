@@ -18,20 +18,20 @@
             <p class="appended">employ an <span class="bluetext">artificial intelligence (AI) moderating</span> system that has been specifically developed and trained for this purpose.</p>
             <a class="continue-button" href="accuracy.html">Continue</a>
         </div>
-        <button id="btn" onclick="readMore()">Find out</button>
-        <a href="#"></a>
-
-        <script>
-            const readMoreText = document.querySelector('.read-more-content');
-            function readMore() {
-                const container = document.createElement('div');
-                container.classList.add('appended-content')
-                var button = document.getElementById('btn');
-                readMoreText.style.display = 'block';
-                button = button.remove();
-            }
-
-        </script>
+        <button id="btn" onclick="readMore()">Find out</button><br>
     </div>
+
+    <a href="hatespeech.html" class="go-back">Go Back</a>
+
+    <script>
+    const readMoreText = document.querySelector('.read-more-content');
+    function readMore() {
+        const container = document.createElement('div');
+        container.classList.add('appended-content')
+        var button = document.getElementById('btn');
+        readMoreText.style.display = 'block';
+        button = button.remove();
+    }
+    </script>
 </body>
 </html>

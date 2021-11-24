@@ -93,7 +93,7 @@ h1 {
     font-family: sans-serif;
     width: 1000px;
     margin: 0 auto;
-    margin-bottom: 3em
+    margin-bottom: 2em
 }
 
 .appended {
@@ -122,4 +122,20 @@ h1 {
 .bluetext {
     color: #65AFFF;
     text-shadow: 1px 1px 1px white;
+}
+
+/* GO BACK BUTTON */
+
+.go-back {
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 1em 0;
+    font-size: 1.5em;
+    text-decoration: underline;
+    transition: 0.2s ease;
+}
+
+.go-back:hover {
+    text-decoration: none;
+    color: #1B2845;
 }
