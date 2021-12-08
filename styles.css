@@ -180,6 +180,7 @@ h1 {
 #images-container {
     background: #1B2845;
     margin-bottom: 2em;
+    padding: 1em;
 }
 
 .example-tweet {
@@ -211,4 +212,20 @@ h1 {
     background: #fafafa;
     color: #65AFFF;
     border: 3px solid #65AFFF;
+}
+
+#refresh {
+    width: 50px;
+    cursor: pointer;
+}
+
+.fa-refresh {
+    color: white;
+    margin: 20px 0 10px 0;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.fa-refresh:hover {
+    color: red;
 }

@@ -14,14 +14,14 @@ function seeClassification() {
     const image = document.querySelector('.example-tweet');
     const button = document.getElementById('btn');
     const container = document.getElementById('container');
-    const goback = document.querySelector('.go-back')
+    const goback = document.querySelector('.go-back');
 
     // REMOVE OLD IMAGE
     image.remove();
 
     // APPEND NEW IMAGE
     const classified = document.createElement('div');
-    classified.innerHTML = "<img src=\"images/classified-tweet.png\" alt=\"\" class=\"classified-tweet\">"
+    classified.innerHTML = "<img src=\"images/classified-tweet.png\" alt=\"\" class=\"classified-tweet\" id=\"classified\">"
     imgcontainer.appendChild(classified);
 
     // BUTTON EDITS
@@ -29,7 +29,24 @@ function seeClassification() {
 
     // ADD NEW BUTTON
     const cont = document.createElement('div');
-    cont.classList.add('btn-spacing')
-    cont.innerHTML = '<a id="btn" href="#">Continue</a>';
-    container.insertBefore(cont, goback)
-}
+    cont.classList.add('btn-spacing');
+    cont.innerHTML = '<a id="btn" class="continue-btn" href="#">Continue</a>';
+    container.insertBefore(cont, goback);
+
+    // SHOW REFRESH BUTTON
+    const refresh = document.createElement('div');
+    refresh.innerHTML = '<i class="fa fa-refresh" style="font-size:36px;"></i>';
+    imgcontainer.appendChild(refresh);
+
+    // ISSUE: WHEN THE CLASSLIST IS REMOVED IT IS REMOVING THE WHOLE TAG, SO WHEN THE ELSE STATEMENT REUNS THE classified IS NULL
+
+    refresh.addEventListener('click', function(){
+        const classifiedImage = document.getElementById('classified');
+        if(classifiedImage.classList.contains('classified-tweet')) { 
+            imgcontainer.removeChild(classified);
+            imgcontainer.insertBefore(image, refresh);
+            classifiedImage.classList.remove('classified-tweet');
+            refresh.remove();
+        }
+    });
+};
