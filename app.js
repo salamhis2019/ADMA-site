@@ -47,6 +47,13 @@ function seeClassification() {
             imgcontainer.insertBefore(image, refresh);
             classifiedImage.classList.remove('classified-tweet');
             refresh.remove();
+            note.remove();
         }
     });
+
+    // ADD NOTE
+    const note = document.createElement('p');
+    note.classList.add('sub-content', 'white');
+    note.textContent = 'Click refresh to view post';
+    imgcontainer.appendChild(note);
 };
